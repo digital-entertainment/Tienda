@@ -45,7 +45,7 @@
   <div class="login-scanline"></div>
 
 <div class="login-box" id="login-box-main">
-          <h1 class="vault-header">INNOVANET</h1>
+          <h1 class="vault-header" style="font-size:1.85rem;text-align:center;white-space:normal;overflow:visible">DIGITAL ENTERTAINMENT</h1>
           <p class="subtitle" style="text-align:center;color:var(--text-gray);margin-bottom:30px">Plataforma de Acceso</p>
 
           <form id="login-form">
@@ -71,8 +71,8 @@
 
             <div class="glitch-input-wrapper">
               <div class="input-container" style="--i:2">
-                <input type="password" id="pass" class="holo-input" placeholder=" " required data-text="Contraseña">
-                <label for="pass" class="input-label" data-text="Contraseña">Contraseña</label>
+                <input type="password" id="pass" class="holo-input" placeholder=" " required data-text="ContraseÃ±a">
+                <label for="pass" class="input-label" data-text="ContraseÃ±a">ContraseÃ±a</label>
                 <span class="material-icons-round eye-icon" id="togglePassword">visibility_off</span>
                 
                 <div class="input-border"></div>
@@ -96,7 +96,7 @@
             </button>
           </form>
 
-          <button class="forgot-password-link" onclick="mostrarRecuperacionPaso1()" style="margin-top:25px">¿Olvidaste tu contraseña?</button>
+          <button class="forgot-password-link" onclick="mostrarRecuperacionPaso1()" style="margin-top:25px">Â¿Olvidaste tu contraseÃ±a?</button>
           <br>
           
 
@@ -109,8 +109,8 @@
         
         <div class="login-box hidden" id="recover-step-1">
           <h1 class="verify-header">VERIFICAR</h1>
-          <p class="subtitle" style="margin-bottom:10px;color:var(--text-white)">Recuperación de cuenta</p>
-          <p style="color:var(--text-gray);font-size:.75rem;text-align:center;margin-bottom:25px">Recuerda colocar tu correo y número registrados.</p>
+          <p class="subtitle" style="margin-bottom:10px;color:var(--text-white)">RecuperaciÃ³n de cuenta</p>
+          <p style="color:var(--text-gray);font-size:.75rem;text-align:center;margin-bottom:25px">Recuerda colocar tu correo y nÃºmero registrados.</p>
 
           <form id="recover-form-1" onsubmit="enviarSolicitudRecuperacion(event)">
             <div class="glitch-input-wrapper">
@@ -126,8 +126,8 @@
 
             <div class="glitch-input-wrapper">
               <div class="input-container" style="--i:2">
-                <input type="tel" id="rec-tel" class="holo-input" placeholder=" " required data-text="Teléfono">
-                <label for="rec-tel" class="input-label" data-text="Teléfono">Número de Teléfono</label>
+                <input type="tel" id="rec-tel" class="holo-input" placeholder=" " required data-text="TelÃ©fono">
+                <label for="rec-tel" class="input-label" data-text="TelÃ©fono">NÃºmero de TelÃ©fono</label>
                 <div class="input-border"></div>
                 <div class="input-corners"><div class="corner corner-tl"></div><div class="corner corner-tr"></div><div class="corner corner-bl"></div><div class="corner corner-br"></div></div>
                 <div class="input-glow"></div><div class="input-scanline"></div>
@@ -147,13 +147,13 @@
         <div class="login-box hidden" id="recover-step-2">
           <h1 class="success-header">NUEVA CLAVE</h1>
           <p class="subtitle" style="margin-bottom:10px;color:var(--text-white)">Identidad Confirmada</p>
-          <p style="color:var(--text-gray);font-size:.75rem;text-align:center;margin-bottom:25px">Define tu nueva clave de acceso (mínimo 8 caracteres).</p>
+          <p style="color:var(--text-gray);font-size:.75rem;text-align:center;margin-bottom:25px">Define tu nueva clave de acceso (mÃ­nimo 8 caracteres).</p>
 
           <form id="recover-form-2" onsubmit="procesarNuevaClave(event)">
             <div class="glitch-input-wrapper">
               <div class="input-container" style="--i:1">
-                <input type="password" id="rec-nueva-clave" class="holo-input" placeholder=" " required data-text="Nueva Contraseña">
-                <label for="rec-nueva-clave" class="input-label" data-text="Nueva Contraseña">Nueva Contraseña</label>
+                <input type="password" id="rec-nueva-clave" class="holo-input" placeholder=" " required data-text="Nueva ContraseÃ±a">
+                <label for="rec-nueva-clave" class="input-label" data-text="Nueva ContraseÃ±a">Nueva ContraseÃ±a</label>
                 <div class="input-border"></div>
                 <div class="input-corners"><div class="corner corner-tl"></div><div class="corner corner-tr"></div><div class="corner corner-bl"></div><div class="corner corner-br"></div></div>
                 <div class="input-glow"></div><div class="input-scanline"></div>
@@ -162,7 +162,7 @@
             </div>
 
             <button type="submit" class="btn-login" id="btn-recover-2" style="--accent-gradient:linear-gradient(135deg, #059669 0%, #10b981 100%)">
-              <span class="btn-login-text">Actualizar Contraseña</span>
+              <span class="btn-login-text">Actualizar ContraseÃ±a</span>
             </button>
           </form>
         </div>
@@ -213,7 +213,7 @@
 
         <li class="nav-item" id="btn-toggle-desktop" onclick="document.getElementById('sidebar').classList.toggle('collapsed')">
           <span class="material-icons-round">menu_open</span>
-          <span class="menu-text">OCULTAR MENÚ</span>
+          <span class="menu-text">OCULTAR MENÃš</span>
         </li>
 
         <li class="nav-item" onclick="nav('inicio',this)">
@@ -316,7 +316,7 @@
 
           
           <div id="display-token-balance" style="display:none;align-items:center;gap:8px;background:linear-gradient(135deg,rgba(245,158,11,.14),rgba(217,119,6,.08));border:1px solid rgba(245,158,11,.35);border-radius:8px;padding:7px 12px;box-shadow:0 0 8px rgba(245,158,11,.12)">
-            <span style="font-size:1.1rem;line-height:1;flex-shrink:0">🪙</span>
+            <span style="font-size:1.1rem;line-height:1;flex-shrink:0">ðŸª™</span>
             <div style="display:flex;align-items:baseline;gap:4px">
               <span id="display-token-amount" style="font-size:.95rem;font-weight:900;color:#f59e0b">0</span>
               <span style="font-size:.68rem;font-weight:800;color:rgba(245,158,11,.65)">TK</span>
@@ -413,7 +413,7 @@
       <div id="sec-recomendaciones" class="hidden">
         <div class="section-header-premium">
           <h1 class="page-title">RECOMENDACIONES VIP</h1>
-          <p class="section-description">¡Las mejores películas y series del momento!</p>
+          <p class="section-description">Â¡Las mejores pelÃ­culas y series del momento!</p>
         </div>
         <div id="recomendaciones-container" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:15px;padding:15px 20px">
           
@@ -422,7 +422,7 @@
 
       <div id="sec-tienda">
         <div class="section-header-premium">
-          <h1 class="page-title">CATÁLOGO PREMIUM</h1>
+          <h1 class="page-title">CATÃLOGO PREMIUM</h1>
           <p class="section-description">Selecciona el servicio que deseas activar en tu cuenta.</p>
         </div>
         <div id="shop-container" class="products-grid">
@@ -450,7 +450,7 @@
                 <thead>
                   <tr>
                     <th>FECHA</th>
-                    <th>DESCRIPCIÓN / TIPO</th>
+                    <th>DESCRIPCIÃ“N / TIPO</th>
                     <th style="text-align:center">MONTO (COP)</th>
                     <th style="text-align:right">NUEVO SALDO</th>
                   </tr>
@@ -470,7 +470,7 @@
       <div id="sec-pedidos" class="hidden">
         <div class="page-header-premium">
           <h1 class="page-title">MIS ADQUISICIONES</h1>
-          <p class="page-subtitle">Acceso directo a tus credenciales y bóveda personal.</p>
+          <p class="page-subtitle">Acceso directo a tus credenciales y bÃ³veda personal.</p>
         </div>
 
         <div class="search-premium-container">
@@ -500,17 +500,17 @@
         <div class="support-card-premium">
           <div class="support-header">
             <span class="material-icons-round" style="font-size:3.5rem;color:var(--accent)">gpp_maybe</span>
-            <h3>SOPORTE TÉCNICO</h3>
+            <h3>SOPORTE TÃ‰CNICO</h3>
           </div>
-          <p>¿Problemas con el acceso? Reporta fallos en cuentas, perfiles o renovaciones. Estamos para servirte.</p>
+          <p>Â¿Problemas con el acceso? Reporta fallos en cuentas, perfiles o renovaciones. Estamos para servirte.</p>
           <div class="support-info-grid">
             <div class="info-item">
               <strong>DISPONIBILIDAD</strong>
               <span>9:00 AM a 11:00 PM</span>
             </div>
             <div class="info-item">
-              <strong>GARANTÍA</strong>
-              <span>Protección total 30 días</span>
+              <strong>GARANTÃA</strong>
+              <span>ProtecciÃ³n total 30 dÃ­as</span>
             </div>
           </div>
           <a href="https://wa.me/573172391419?text=Hola,%20tengo%20un%20problema%20con%20mi%20cuenta" target="_blank" class="cta-button" style="width:100%;margin-top:25px">REPORTAR FALLA AHORA</a>
@@ -535,8 +535,8 @@
       <div id="sec-tokens" class="hidden"></div>
       <div id="sec-ranking" class="hidden">
         <div class="page-header-premium">
-          <h1 class="page-title">SALÓN DE LA FAMA</h1>
-          <p class="page-subtitle">Descubre a los mayores líderes de la bóveda.</p>
+          <h1 class="page-title">SALÃ“N DE LA FAMA</h1>
+          <p class="page-subtitle">Descubre a los mayores lÃ­deres de la bÃ³veda.</p>
         </div>
       </div>
 
@@ -557,7 +557,7 @@
         </button>
       </div>
       <div class="drawer-body" id="cart-items-list">
-        <p style="text-align:center;color:#444;margin-top:30px">Tu carrito está esperando.</p>
+        <p style="text-align:center;color:#444;margin-top:30px">Tu carrito estÃ¡ esperando.</p>
       </div>
       <div class="drawer-footer">
         <div class="drawer-total">
@@ -571,18 +571,18 @@
 
     <div class="overlay hidden" id="checkout-overlay"></div>
     <div class="checkout-modal" id="checkout-modal">
-      <div class="checkout-header">CONFIRMACIÓN DE PAGO</div>
+      <div class="checkout-header">CONFIRMACIÃ“N DE PAGO</div>
       <div class="checkout-body">
-        <p style="color:#777;margin-bottom:20px;font-size:.85rem;text-align:center">Estás a un paso de activar
+        <p style="color:#777;margin-bottom:20px;font-size:.85rem;text-align:center">EstÃ¡s a un paso de activar
           tus servicios. Revisa tu pedido:</p>
         <div id="checkout-summary-list" class="checkout-list-container"></div>
         <div class="checkout-total-row">
-          <span>DÉBITO TOTAL:</span>
+          <span>DÃ‰BITO TOTAL:</span>
           <span id="checkout-final-total">$ 0</span>
         </div>
       </div>
       <div class="checkout-actions">
-        <button class="btn-final-cancel" onclick="closeCheckout()">ATRÁS</button>
+        <button class="btn-final-cancel" onclick="closeCheckout()">ATRÃS</button>
         <button class="btn-final-pay" onclick="finalizePurchase()">CONFIRMAR Y PAGAR</button>
       </div>
     </div>
@@ -622,15 +622,15 @@
         </div>
         
         <h3 style="color:#fff;margin:0;font-size:1.25rem;font-weight:800;line-height:1.3">
-          ¡Tu Bot Personal de <span style="color:#25d366">WhatsApp!</span>
+          Â¡Tu Bot Personal de <span style="color:#25d366">WhatsApp!</span>
         </h3>
         
         <div style="text-align:left;background:rgba(0,0,0,.3);padding:15px;border-radius:12px;border:1px solid rgba(255,255,255,.1);width:100%;box-sizing:border-box">
           <h4 style="color:#25d366;margin:0 0 10px 0;font-size:1rem"><i class="fas fa-info-circle"></i> Instrucciones de uso:</h4>
           <ul style="color:#d1d5db;font-size:.85rem;padding-left:20px;margin:0;line-height:1.5">
-            <li style="margin-bottom:8px">El número que ingreses en la actualización de datos <strong style="color:#fff">debe ser el mismo</strong> del que vas a escribir. De otra manera el bot no te reconocerá.</li>
-            <li style="margin-bottom:8px">El bot vinculará tu número con tu usuario. Todas las compras que hagas desde ahí se descontarán del saldo de tu plataforma.</li>
-            <li>Ambos saldos y movimientos se pueden validar en tiempo real tanto desde esta página como desde el bot.</li>
+            <li style="margin-bottom:8px">El nÃºmero que ingreses en la actualizaciÃ³n de datos <strong style="color:#fff">debe ser el mismo</strong> del que vas a escribir. De otra manera el bot no te reconocerÃ¡.</li>
+            <li style="margin-bottom:8px">El bot vincularÃ¡ tu nÃºmero con tu usuario. Todas las compras que hagas desde ahÃ­ se descontarÃ¡n del saldo de tu plataforma.</li>
+            <li>Ambos saldos y movimientos se pueden validar en tiempo real tanto desde esta pÃ¡gina como desde el bot.</li>
           </ul>
         </div>
         
@@ -647,7 +647,7 @@
     </div>
 
   </div>
-  <script>document.addEventListener('DOMContentLoaded',async()=>{if('undefined'!=typeof NOMBRE_NEGOCIO){document.title=NOMBRE_NEGOCIO;const t=document.getElementById('site-logo');t&&(t.alt=`Logo ${NOMBRE_NEGOCIO}`)}const t='dw_branding_cache',e=(t,e)=>{if(t){const e=document.getElementById('site-logo');e&&(e.src=t)}if(e){const t=document.getElementById('login-banner');t&&(t.style.backgroundImage=`url('${e}')`)}};window.hasConsentidoWsp=function(){try{const t=localStorage.getItem('dw_perfil_datos_v2');if(t){const e=JSON.parse(t);if(e&&e.datos){const t=e.datos.consentimiento||e.datos.Consentimiento||'No';return'si'===t.toLowerCase()||'s\xed'===t.toLowerCase()}}}catch(t){}return!1},window.abrirModalWspBot=function(t=!1){if(t&&window.hasConsentidoWsp())return void window.open('https://wa.me/'+NUMERO_WSP+'?text=Hola,%20quiero%20informaci%C3%B3n','_blank');const e=document.getElementById('wsp-bot-overlay'),o=document.getElementById('wsp-bot-modal');e&&e.classList.remove('hidden'),o&&o.classList.add('active')},window.cerrarModalWspBot=function(){const t=document.getElementById('wsp-bot-overlay'),e=document.getElementById('wsp-bot-modal');t&&t.classList.add('hidden'),e&&e.classList.remove('active')};try{const o=localStorage.getItem(t);if(o){const t=JSON.parse(o);if((new Date).getTime()-t.timestamp<36e5)return void e(t.logo,t.banner)}const n=await fetch(`${API_BASE_URL_CLIENTE}/dw_api.php`,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'accion=getConfiguracion'}),a=await n.json();if(a.success&&a.datos){let o=a.datos.logo||'',n=a.datos.banner||'';o&&(o.includes('uc?export=view&id=')?o=o.replace('uc?export=view&id=','thumbnail?id=')+'&sz=w400':o.startsWith('http')||o.startsWith('data:')||(o=API_BASE_URL_CLIENTE+'/uploads/categorias/'+o)),n&&(n.includes('uc?export=view&id=')?n=n.replace('uc?export=view&id=','thumbnail?id=')+'&sz=w1200':n.startsWith('http')||n.startsWith('data:')||(n=API_BASE_URL_CLIENTE+'/uploads/categorias/'+n)),e(o,n),localStorage.setItem(t,JSON.stringify({logo:o,banner:n,timestamp:(new Date).getTime()}))}}catch(o){console.warn('No se pudo cargar el branding din\xe1mico, usando plan de respaldo:',o);const n=localStorage.getItem(t);if(n){const t=JSON.parse(n);e(t.logo,t.banner)}}})</script>
+  <script>document.addEventListener('DOMContentLoaded',async()=>{if('undefined'!=typeof NOMBRE_NEGOCIO){document.title=NOMBRE_NEGOCIO;const t=document.getElementById('site-logo');t&&(t.alt=`Logo ${NOMBRE_NEGOCIO}`)}const t='dw_branding_cache',e=(t,e)=>{if(t){const e=document.getElementById('site-logo');e&&(e.src=t)}if(e){const t=document.getElementById('login-banner');t&&(t.style.backgroundImage=`url('${e}')`)}};window.hasConsentidoWsp=function(){try{const t=localStorage.getItem('dw_perfil_datos_v2');if(t){const e=JSON.parse(t);if(e&&e.datos){const t=e.datos.consentimiento||e.datos.Consentimiento||'No';return'si'===t.toLowerCase()||'s\xc3\xad'===t.toLowerCase()}}}catch(t){}return!1},window.abrirModalWspBot=function(t=!1){if(t&&window.hasConsentidoWsp())return void window.open('https://wa.me/'+NUMERO_WSP+'?text=Hola,%20quiero%20informaci%C3%B3n','_blank');const e=document.getElementById('wsp-bot-overlay'),o=document.getElementById('wsp-bot-modal');e&&e.classList.remove('hidden'),o&&o.classList.add('active')},window.cerrarModalWspBot=function(){const t=document.getElementById('wsp-bot-overlay'),e=document.getElementById('wsp-bot-modal');t&&t.classList.add('hidden'),e&&e.classList.remove('active')};try{const o=localStorage.getItem(t);if(o){const t=JSON.parse(o);if((new Date).getTime()-t.timestamp<36e5)return void e(t.logo,t.banner)}const n=await fetch(`${API_BASE_URL_CLIENTE}/dw_api.php`,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'accion=getConfiguracion'}),a=await n.json();if(a.success&&a.datos){let o=a.datos.logo||'',n=a.datos.banner||'';o&&(o.includes('uc?export=view&id=')?o=o.replace('uc?export=view&id=','thumbnail?id=')+'&sz=w400':o.startsWith('http')||o.startsWith('data:')||(o=API_BASE_URL_CLIENTE+'/uploads/categorias/'+o)),n&&(n.includes('uc?export=view&id=')?n=n.replace('uc?export=view&id=','thumbnail?id=')+'&sz=w1200':n.startsWith('http')||n.startsWith('data:')||(n=API_BASE_URL_CLIENTE+'/uploads/categorias/'+n)),e(o,n),localStorage.setItem(t,JSON.stringify({logo:o,banner:n,timestamp:(new Date).getTime()}))}}catch(o){console.warn('No se pudo cargar el branding din\xc3\xa1mico, usando plan de respaldo:',o);const n=localStorage.getItem(t);if(n){const t=JSON.parse(n);e(t.logo,t.banner)}}})</script>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -660,6 +660,6 @@
   
   <script>function buildLoginCascade(){const e=document.getElementById('cascade-container');if(!e||'undefined'==typeof posterData||!posterData||0===posterData.length)return;e.innerHTML='';const t=posterData.map(e=>e.url).sort(()=>Math.random()-.5);for(let n=0;n<12;n++){const a=document.createElement('div');a.className='cascade-column';const s=[];for(let e=0;e<10;e++)s.push(t[(10*n+e)%t.length]);[...s,...s].forEach(e=>{const t=document.createElement('img');t.src=e,t.className='cascade-item',t.alt='',a.appendChild(t)}),e.appendChild(a)}let n=!1,a=.25;function s(){const e=n?0:a;if(document.getAnimations().forEach(t=>{'scrollVertical'===t.animationName&&(t.playbackRate=e)}),document.querySelectorAll('.cascade-btn').forEach(e=>{e.style.color='rgba(255,255,255,0.5)',e.style.transform='scale(1)'}),n)document.getElementById('btn-pause').style.color='#10b981',document.getElementById('btn-pause').style.transform='scale(1.15)';else{document.getElementById('btn-pause').style.color='white';const e=a.toString().replace('.',''),t=document.getElementById('btn-speed-'+e);t&&(t.style.color='#10b981',t.style.transform='scale(1.15)')}}window.setCascadeSpeed=function(e){a=e,n=!1;const t=document.getElementById('btn-pause');t&&(t.innerHTML='<span class="material-icons-round">pause</span>'),s()},window.toggleCascadePause=function(){n=!n;const e=document.getElementById('btn-pause');e&&(e.innerHTML=`<span class="material-icons-round">${n?'play_arrow':'pause'}</span>`),s()};const c=document.getElementById('btn-pause');c&&(c.onclick=toggleCascadePause,document.getElementById('btn-speed-025').onclick=()=>setCascadeSpeed(.25),document.getElementById('btn-speed-05').onclick=()=>setCascadeSpeed(.5),document.getElementById('btn-speed-1').onclick=()=>setCascadeSpeed(1),document.getElementById('btn-speed-25').onclick=()=>setCascadeSpeed(2.5),setTimeout(()=>setCascadeSpeed(.25),100))}!function e(t){'undefined'!=typeof posterData&&posterData&&posterData.length>0?buildLoginCascade():t<20&&setTimeout(function(){e(t+1)},150)}(0)</script>
 
-  <script src="app.min.js?v=1785124119589"></script>
+  <script src="app.min.js?v=1785125467152"></script>
 </body>
 </html>
