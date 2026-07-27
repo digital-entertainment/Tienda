@@ -29,7 +29,7 @@
   <meta name="theme-color" content="#0a0a0a">
   <link rel="apple-touch-icon" href="assets/icon-512x512.png">
   <script>'serviceWorker'in navigator&&window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').then(e=>{console.log('SW registrado exitosamente con alcance: ',e.scope)},e=>{console.log('Registro de SW fallido: ',e)})})</script>
-    <script>localStorage.getItem('dw_token')&&localStorage.getItem('dw_user')&&document.write('<style>#login-view { display: none !important; } #app-view { display: flex !important; }</style>'),function(){const e=localStorage.getItem('dw_tema_color')||'tec';let c='';'tec'===e?c=':root { --accent: #ec4899; --accent-hover: #db2777; --accent-glow: rgba(236,72,153,0.2); --accent-text: #db2777; --accent-gradient: linear-gradient(135deg,#ec4899 0%,#be185d 100%); } .dark-mode { --accent: #f472b6; --accent-hover: #ec4899; --accent-glow: rgba(244,114,182,0.35); --accent-text: #f9a8d4; --accent-gradient: linear-gradient(135deg,#f472b6 0%,#db2777 100%); }':'oceano'===e?c=':root { --accent: #0284c7; --accent-hover: #0369a1; --accent-glow: rgba(2,132,199,0.2); --accent-text: #0369a1; --accent-gradient: linear-gradient(135deg,#0284c7 0%,#0891b2 100%); } .dark-mode { --accent: #38bdf8; --accent-hover: #0284c7; --accent-glow: rgba(56,189,248,0.35); --accent-text: #7dd3fc; --accent-gradient: linear-gradient(135deg,#38bdf8 0%,#22d3ee 100%); }':'esmeralda'===e?c=':root { --accent: #059669; --accent-hover: #047857; --accent-glow: rgba(5,150,105,0.2); --accent-text: #047857; --accent-gradient: linear-gradient(135deg,#059669 0%,#0d9488 100%); } .dark-mode { --accent: #10b981; --accent-hover: #059669; --accent-glow: rgba(16,185,129,0.35); --accent-text: #34d399; --accent-gradient: linear-gradient(135deg,#10b981 0%,#14b8a6 100%); }':'fuego'===e&&(c=':root { --accent: #dc2626; --accent-hover: #b91c1c; --accent-glow: rgba(249,115,22,0.2); --accent-text: #c2410c; --accent-gradient: linear-gradient(135deg,#dc2626 0%,#ea580c 100%); } .dark-mode { --accent: #ef4444; --accent-hover: #dc2626; --accent-glow: rgba(249,115,22,0.35); --accent-text: #fb923c; --accent-gradient: linear-gradient(135deg,#ef4444 0%,#f97316 100%); }'),c&&document.write('<style>'+c+'</style>')}()</script>
+  <script>localStorage.getItem('dw_token')&&localStorage.getItem('dw_user')&&document.write('<style>#login-view { display: none !important; } #app-view { display: flex !important; }</style>'),function(){const e=localStorage.getItem('dw_tema_color')||'tec';let c='';'tec'===e?c=':root { --accent: #ec4899; --accent-hover: #db2777; --accent-glow: rgba(236,72,153,0.2); --accent-text: #db2777; --accent-gradient: linear-gradient(135deg,#ec4899 0%,#be185d 100%); } .dark-mode { --accent: #f472b6; --accent-hover: #ec4899; --accent-glow: rgba(244,114,182,0.35); --accent-text: #f9a8d4; --accent-gradient: linear-gradient(135deg,#f472b6 0%,#db2777 100%); }':'oceano'===e?c=':root { --accent: #0284c7; --accent-hover: #0369a1; --accent-glow: rgba(2,132,199,0.2); --accent-text: #0369a1; --accent-gradient: linear-gradient(135deg,#0284c7 0%,#0891b2 100%); } .dark-mode { --accent: #38bdf8; --accent-hover: #0284c7; --accent-glow: rgba(56,189,248,0.35); --accent-text: #7dd3fc; --accent-gradient: linear-gradient(135deg,#38bdf8 0%,#22d3ee 100%); }':'esmeralda'===e?c=':root { --accent: #059669; --accent-hover: #047857; --accent-glow: rgba(5,150,105,0.2); --accent-text: #047857; --accent-gradient: linear-gradient(135deg,#059669 0%,#0d9488 100%); } .dark-mode { --accent: #10b981; --accent-hover: #059669; --accent-glow: rgba(16,185,129,0.35); --accent-text: #34d399; --accent-gradient: linear-gradient(135deg,#10b981 0%,#14b8a6 100%); }':'fuego'===e&&(c=':root { --accent: #dc2626; --accent-hover: #b91c1c; --accent-glow: rgba(249,115,22,0.2); --accent-text: #c2410c; --accent-gradient: linear-gradient(135deg,#dc2626 0%,#ea580c 100%); } .dark-mode { --accent: #ef4444; --accent-hover: #dc2626; --accent-glow: rgba(249,115,22,0.35); --accent-text: #fb923c; --accent-gradient: linear-gradient(135deg,#ef4444 0%,#f97316 100%); }'),c&&document.write('<style>'+c+'</style>')}()</script>
 </head>
 
 <body>
@@ -38,22 +38,24 @@
 
     
     <div class="login-split">
-      
-      <div class="login-left">
-  
-  <div class="login-deco-orb"></div>
-  <div class="login-scanline"></div>
 
-<div class="login-box" id="login-box-main">
-          <h1 class="vault-header" style="font-size:1.85rem;text-align:center;white-space:normal;overflow:visible">DIGITAL ENTERTAINMENT</h1>
-          <p class="subtitle" style="text-align:center;color:var(--text-gray);margin-bottom:30px">Plataforma de Acceso</p>
+      <div class="login-left">
+        
+        <div class="login-deco-orb"></div>
+        <div class="login-scanline"></div>
+        
+        <div class="login-box" id="login-box-main">
+          <h1 class="vault-header" style="font-size:1.85rem;text-align:center;white-space:normal;overflow:visible">DIGITAL
+            ENTERTAINMENT</h1>
+          <p class="subtitle" style="text-align:center;color:var(--text-gray);margin-bottom:30px">Plataforma de
+            Acceso</p>
 
           <form id="login-form">
             <div class="glitch-input-wrapper">
               <div class="input-container" style="--i:1">
                 <input type="text" id="user" class="holo-input" placeholder=" " required data-text="Usuario">
                 <label for="user" class="input-label" data-text="Usuario">Usuario</label>
-                
+
                 <div class="input-border"></div>
                 <div class="input-corners">
                   <div class="corner corner-tl"></div>
@@ -64,17 +66,24 @@
                 <div class="input-glow"></div>
                 <div class="input-scanline"></div>
                 <div class="input-data-stream">
-                  <div class="stream-bar" style="--i:1"></div><div class="stream-bar" style="--i:2"></div><div class="stream-bar" style="--i:3"></div><div class="stream-bar" style="--i:4"></div><div class="stream-bar" style="--i:5"></div><div class="stream-bar" style="--i:6"></div><div class="stream-bar" style="--i:7"></div><div class="stream-bar" style="--i:8"></div>
+                  <div class="stream-bar" style="--i:1"></div>
+                  <div class="stream-bar" style="--i:2"></div>
+                  <div class="stream-bar" style="--i:3"></div>
+                  <div class="stream-bar" style="--i:4"></div>
+                  <div class="stream-bar" style="--i:5"></div>
+                  <div class="stream-bar" style="--i:6"></div>
+                  <div class="stream-bar" style="--i:7"></div>
+                  <div class="stream-bar" style="--i:8"></div>
                 </div>
               </div>
             </div>
 
             <div class="glitch-input-wrapper">
               <div class="input-container" style="--i:2">
-                <input type="password" id="pass" class="holo-input" placeholder=" " required data-text="ContraseÃ±a">
-                <label for="pass" class="input-label" data-text="ContraseÃ±a">ContraseÃ±a</label>
+                <input type="password" id="pass" class="holo-input" placeholder=" " required data-text="Contraseña">
+                <label for="pass" class="input-label" data-text="Contraseña">Contraseña</label>
                 <span class="material-icons-round eye-icon" id="togglePassword">visibility_off</span>
-                
+
                 <div class="input-border"></div>
                 <div class="input-corners">
                   <div class="corner corner-tl"></div>
@@ -85,7 +94,14 @@
                 <div class="input-glow"></div>
                 <div class="input-scanline"></div>
                 <div class="input-data-stream">
-                  <div class="stream-bar" style="--i:1"></div><div class="stream-bar" style="--i:2"></div><div class="stream-bar" style="--i:3"></div><div class="stream-bar" style="--i:4"></div><div class="stream-bar" style="--i:5"></div><div class="stream-bar" style="--i:6"></div><div class="stream-bar" style="--i:7"></div><div class="stream-bar" style="--i:8"></div>
+                  <div class="stream-bar" style="--i:1"></div>
+                  <div class="stream-bar" style="--i:2"></div>
+                  <div class="stream-bar" style="--i:3"></div>
+                  <div class="stream-bar" style="--i:4"></div>
+                  <div class="stream-bar" style="--i:5"></div>
+                  <div class="stream-bar" style="--i:6"></div>
+                  <div class="stream-bar" style="--i:7"></div>
+                  <div class="stream-bar" style="--i:8"></div>
                 </div>
               </div>
             </div>
@@ -96,21 +112,24 @@
             </button>
           </form>
 
-          <button class="forgot-password-link" onclick="mostrarRecuperacionPaso1()" style="margin-top:25px">Â¿Olvidaste tu contraseÃ±a?</button>
+          <button class="forgot-password-link" onclick="mostrarRecuperacionPaso1()" style="margin-top:25px">¿Olvidaste
+            tu contraseña?</button>
           <br>
           
 
           <div style="text-align:center;margin-top:28px;font-size:.68rem;color:var(--text-gray)">
-              &copy; 2026 Desarrollado por <span style="font-weight:700;color:var(--text-white)">Brallan Ariza</span><br>
-              Todos los derechos reservados.
+            &copy; 2026 Desarrollado por <span style="font-weight:700;color:var(--text-white)">Brallan
+              Ariza</span><br>
+            Todos los derechos reservados.
           </div>
         </div>
 
         
         <div class="login-box hidden" id="recover-step-1">
           <h1 class="verify-header">VERIFICAR</h1>
-          <p class="subtitle" style="margin-bottom:10px;color:var(--text-white)">RecuperaciÃ³n de cuenta</p>
-          <p style="color:var(--text-gray);font-size:.75rem;text-align:center;margin-bottom:25px">Recuerda colocar tu correo y nÃºmero registrados.</p>
+          <p class="subtitle" style="margin-bottom:10px;color:var(--text-white)">Recuperación de cuenta</p>
+          <p style="color:var(--text-gray);font-size:.75rem;text-align:center;margin-bottom:25px">Recuerda
+            colocar tu correo y número registrados.</p>
 
           <form id="recover-form-1" onsubmit="enviarSolicitudRecuperacion(event)">
             <div class="glitch-input-wrapper">
@@ -118,20 +137,50 @@
                 <input type="email" id="rec-correo" class="holo-input" placeholder=" " required data-text="Correo">
                 <label for="rec-correo" class="input-label" data-text="Correo">Correo Registrado</label>
                 <div class="input-border"></div>
-                <div class="input-corners"><div class="corner corner-tl"></div><div class="corner corner-tr"></div><div class="corner corner-bl"></div><div class="corner corner-br"></div></div>
-                <div class="input-glow"></div><div class="input-scanline"></div>
-                <div class="input-data-stream"><div class="stream-bar" style="--i:1"></div><div class="stream-bar" style="--i:2"></div><div class="stream-bar" style="--i:3"></div><div class="stream-bar" style="--i:4"></div><div class="stream-bar" style="--i:5"></div><div class="stream-bar" style="--i:6"></div><div class="stream-bar" style="--i:7"></div><div class="stream-bar" style="--i:8"></div></div>
+                <div class="input-corners">
+                  <div class="corner corner-tl"></div>
+                  <div class="corner corner-tr"></div>
+                  <div class="corner corner-bl"></div>
+                  <div class="corner corner-br"></div>
+                </div>
+                <div class="input-glow"></div>
+                <div class="input-scanline"></div>
+                <div class="input-data-stream">
+                  <div class="stream-bar" style="--i:1"></div>
+                  <div class="stream-bar" style="--i:2"></div>
+                  <div class="stream-bar" style="--i:3"></div>
+                  <div class="stream-bar" style="--i:4"></div>
+                  <div class="stream-bar" style="--i:5"></div>
+                  <div class="stream-bar" style="--i:6"></div>
+                  <div class="stream-bar" style="--i:7"></div>
+                  <div class="stream-bar" style="--i:8"></div>
+                </div>
               </div>
             </div>
 
             <div class="glitch-input-wrapper">
               <div class="input-container" style="--i:2">
-                <input type="tel" id="rec-tel" class="holo-input" placeholder=" " required data-text="TelÃ©fono">
-                <label for="rec-tel" class="input-label" data-text="TelÃ©fono">NÃºmero de TelÃ©fono</label>
+                <input type="tel" id="rec-tel" class="holo-input" placeholder=" " required data-text="Teléfono">
+                <label for="rec-tel" class="input-label" data-text="Teléfono">Número de Teléfono</label>
                 <div class="input-border"></div>
-                <div class="input-corners"><div class="corner corner-tl"></div><div class="corner corner-tr"></div><div class="corner corner-bl"></div><div class="corner corner-br"></div></div>
-                <div class="input-glow"></div><div class="input-scanline"></div>
-                <div class="input-data-stream"><div class="stream-bar" style="--i:1"></div><div class="stream-bar" style="--i:2"></div><div class="stream-bar" style="--i:3"></div><div class="stream-bar" style="--i:4"></div><div class="stream-bar" style="--i:5"></div><div class="stream-bar" style="--i:6"></div><div class="stream-bar" style="--i:7"></div><div class="stream-bar" style="--i:8"></div></div>
+                <div class="input-corners">
+                  <div class="corner corner-tl"></div>
+                  <div class="corner corner-tr"></div>
+                  <div class="corner corner-bl"></div>
+                  <div class="corner corner-br"></div>
+                </div>
+                <div class="input-glow"></div>
+                <div class="input-scanline"></div>
+                <div class="input-data-stream">
+                  <div class="stream-bar" style="--i:1"></div>
+                  <div class="stream-bar" style="--i:2"></div>
+                  <div class="stream-bar" style="--i:3"></div>
+                  <div class="stream-bar" style="--i:4"></div>
+                  <div class="stream-bar" style="--i:5"></div>
+                  <div class="stream-bar" style="--i:6"></div>
+                  <div class="stream-bar" style="--i:7"></div>
+                  <div class="stream-bar" style="--i:8"></div>
+                </div>
               </div>
             </div>
 
@@ -140,29 +189,46 @@
             </button>
           </form>
 
-          <button class="forgot-password-link" onclick="volverLogin()" style="margin-top:20px">Volver al inicio</button>
+          <button class="forgot-password-link" onclick="volverLogin()" style="margin-top:20px">Volver al
+            inicio</button>
         </div>
 
         
         <div class="login-box hidden" id="recover-step-2">
           <h1 class="success-header">NUEVA CLAVE</h1>
           <p class="subtitle" style="margin-bottom:10px;color:var(--text-white)">Identidad Confirmada</p>
-          <p style="color:var(--text-gray);font-size:.75rem;text-align:center;margin-bottom:25px">Define tu nueva clave de acceso (mÃ­nimo 8 caracteres).</p>
+          <p style="color:var(--text-gray);font-size:.75rem;text-align:center;margin-bottom:25px">Define tu
+            nueva clave de acceso (mínimo 8 caracteres).</p>
 
           <form id="recover-form-2" onsubmit="procesarNuevaClave(event)">
             <div class="glitch-input-wrapper">
               <div class="input-container" style="--i:1">
-                <input type="password" id="rec-nueva-clave" class="holo-input" placeholder=" " required data-text="Nueva ContraseÃ±a">
-                <label for="rec-nueva-clave" class="input-label" data-text="Nueva ContraseÃ±a">Nueva ContraseÃ±a</label>
+                <input type="password" id="rec-nueva-clave" class="holo-input" placeholder=" " required data-text="Nueva Contraseña">
+                <label for="rec-nueva-clave" class="input-label" data-text="Nueva Contraseña">Nueva Contraseña</label>
                 <div class="input-border"></div>
-                <div class="input-corners"><div class="corner corner-tl"></div><div class="corner corner-tr"></div><div class="corner corner-bl"></div><div class="corner corner-br"></div></div>
-                <div class="input-glow"></div><div class="input-scanline"></div>
-                <div class="input-data-stream"><div class="stream-bar" style="--i:1"></div><div class="stream-bar" style="--i:2"></div><div class="stream-bar" style="--i:3"></div><div class="stream-bar" style="--i:4"></div><div class="stream-bar" style="--i:5"></div><div class="stream-bar" style="--i:6"></div><div class="stream-bar" style="--i:7"></div><div class="stream-bar" style="--i:8"></div></div>
+                <div class="input-corners">
+                  <div class="corner corner-tl"></div>
+                  <div class="corner corner-tr"></div>
+                  <div class="corner corner-bl"></div>
+                  <div class="corner corner-br"></div>
+                </div>
+                <div class="input-glow"></div>
+                <div class="input-scanline"></div>
+                <div class="input-data-stream">
+                  <div class="stream-bar" style="--i:1"></div>
+                  <div class="stream-bar" style="--i:2"></div>
+                  <div class="stream-bar" style="--i:3"></div>
+                  <div class="stream-bar" style="--i:4"></div>
+                  <div class="stream-bar" style="--i:5"></div>
+                  <div class="stream-bar" style="--i:6"></div>
+                  <div class="stream-bar" style="--i:7"></div>
+                  <div class="stream-bar" style="--i:8"></div>
+                </div>
               </div>
             </div>
 
             <button type="submit" class="btn-login" id="btn-recover-2" style="--accent-gradient:linear-gradient(135deg, #059669 0%, #10b981 100%)">
-              <span class="btn-login-text">Actualizar ContraseÃ±a</span>
+              <span class="btn-login-text">Actualizar Contraseña</span>
             </button>
           </form>
         </div>
@@ -177,7 +243,7 @@
       <div class="login-right">
         <div class="cascade-container" id="cascade-container"></div>
         <div class="cascade-overlay"></div>
-        
+
         
         <div class="cascade-controls" style="position:absolute;bottom:30px;right:30px;z-index:10;display:flex;gap:15px;background:rgba(10,10,15,.7);padding:10px 18px;border-radius:30px;border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(8px);box-shadow:0 10px 30px rgba(0,0,0,.5);align-items:center">
           <button class="cascade-btn" id="btn-pause" title="Play/Pausa" style="background:0 0;border:none;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s ease"><span class="material-icons-round">pause</span></button>
@@ -193,7 +259,9 @@
 
   <div id="app-view" style="display:none;position:relative">
     
-    <div id="particles-app" class="mesh-bg"><div class="mesh-bg-blob"></div></div>
+    <div id="particles-app" class="mesh-bg">
+      <div class="mesh-bg-blob"></div>
+    </div>
 
     <button class="hamburger-menu" id="hamburger-btn" onclick="toggleSidebar()">
 
@@ -213,7 +281,7 @@
 
         <li class="nav-item" id="btn-toggle-desktop" onclick="document.getElementById('sidebar').classList.toggle('collapsed')">
           <span class="material-icons-round">menu_open</span>
-          <span class="menu-text">OCULTAR MENÃš</span>
+          <span class="menu-text">OCULTAR MENÚ</span>
         </li>
 
         <li class="nav-item" onclick="nav('inicio',this)">
@@ -311,7 +379,8 @@
           
           <div style="display:flex;align-items:center;gap:8px;background:rgba(124,58,237,.12);border:1px solid rgba(124,58,237,.3);border-radius:8px;padding:7px 12px">
             <span class="material-icons-round" style="font-size:1rem;color:var(--accent,#7c3aed);flex-shrink:0">account_balance_wallet</span>
-            <div class="user-balance" id="display-balance" style="font-size:.95rem;font-weight:900;margin:0">$ 0</div>
+            <div class="user-balance" id="display-balance" style="font-size:.95rem;font-weight:900;margin:0">$ 0
+            </div>
           </div>
 
           
@@ -389,8 +458,8 @@
         <div class="temas-section">
           <h3 class="temas-section-title" onclick="document.getElementById('panel-temas').classList.toggle('hidden');const icon=this.querySelector('.toggle-icon');icon.textContent='expand_more'===icon.textContent?'expand_less':'expand_more'" style="cursor:pointer;display:flex;justify-content:space-between;align-items:center">
             <div>
-                <span class="material-icons-round">palette</span>
-                Aspecto Visual
+              <span class="material-icons-round">palette</span>
+              Aspecto Visual
             </div>
             <span class="material-icons-round toggle-icon">expand_more</span>
           </h3>
@@ -507,7 +576,7 @@
         <div class="support-card-premium">
           <div class="support-header">
             <span class="material-icons-round" style="font-size:3.5rem;color:var(--accent)">gpp_maybe</span>
-            <h3>SOPORTE TÃ‰CNICO</h3>
+            <h3>SOPORTE TÉCNICO</h3>
           </div>
           <p>Â¿Problemas con el acceso? Reporta fallos en cuentas, perfiles o renovaciones. Estamos para servirte.</p>
           <div class="support-info-grid">
@@ -516,8 +585,8 @@
               <span>9:00 AM a 11:00 PM</span>
             </div>
             <div class="info-item">
-              <strong>GARANTÃA</strong>
-              <span>ProtecciÃ³n total 30 dÃ­as</span>
+              <strong>GARANTÍA</strong>
+              <span>Protección total 30 días</span>
             </div>
           </div>
           <a href="https://wa.me/573172391419?text=Hola,%20tengo%20un%20problema%20con%20mi%20cuenta" target="_blank" class="cta-button" style="width:100%;margin-top:25px">REPORTAR FALLA AHORA</a>
@@ -542,8 +611,8 @@
       <div id="sec-tokens" class="hidden"></div>
       <div id="sec-ranking" class="hidden">
         <div class="page-header-premium">
-          <h1 class="page-title">SALÃ“N DE LA FAMA</h1>
-          <p class="page-subtitle">Descubre a los mayores lÃ­deres de la bóveda.</p>
+          <h1 class="page-title">SALÓN DE LA FAMA</h1>
+          <p class="page-subtitle">Descubre a los mayores líderes de la bóveda.</p>
         </div>
       </div>
 
@@ -564,7 +633,7 @@
         </button>
       </div>
       <div class="drawer-body" id="cart-items-list">
-        <p style="text-align:center;color:#444;margin-top:30px">Tu carrito estÃ¡ esperando.</p>
+        <p style="text-align:center;color:#444;margin-top:30px">Tu carrito está esperando.</p>
       </div>
       <div class="drawer-footer">
         <div class="drawer-total">
@@ -578,18 +647,18 @@
 
     <div class="overlay hidden" id="checkout-overlay"></div>
     <div class="checkout-modal" id="checkout-modal">
-      <div class="checkout-header">CONFIRMACIÃ“N DE PAGO</div>
+      <div class="checkout-header">CONFIRMACIÓN DE PAGO</div>
       <div class="checkout-body">
-        <p style="color:#777;margin-bottom:20px;font-size:.85rem;text-align:center">EstÃ¡s a un paso de activar
+        <p style="color:#777;margin-bottom:20px;font-size:.85rem;text-align:center">Estás a un paso de activar
           tus servicios. Revisa tu pedido:</p>
         <div id="checkout-summary-list" class="checkout-list-container"></div>
         <div class="checkout-total-row">
-          <span>DÃ‰BITO TOTAL:</span>
+          <span>DÉBITO TOTAL:</span>
           <span id="checkout-final-total">$ 0</span>
         </div>
       </div>
       <div class="checkout-actions">
-        <button class="btn-final-cancel" onclick="closeCheckout()">ATRÃS</button>
+        <button class="btn-final-cancel" onclick="closeCheckout()">ATRÁS</button>
         <button class="btn-final-pay" onclick="finalizePurchase()">CONFIRMAR Y PAGAR</button>
       </div>
     </div>
@@ -613,11 +682,13 @@
     <div class="overlay hidden" id="wsp-bot-overlay" onclick="cerrarModalWspBot()" style="backdrop-filter:blur(8px);background:rgba(0,0,0,.7);z-index:10999"></div>
     <div class="update-modal" id="wsp-bot-modal" style="background:rgba(18,18,20,.85);backdrop-filter:blur(20px);border:1px solid rgba(37,211,102,.3);max-width:650px;width:95%;text-align:center;border-radius:24px;box-shadow:0 25px 50px rgba(0,0,0,.5),0 0 40px rgba(37,211,102,.15);overflow:hidden;z-index:11000">
       
-      <div style="position:absolute;top:-50px;left:50%;transform:translateX(-50%);width:200px;height:200px;background:#25d366;filter:blur(100px);opacity:.2;pointer-events:none"></div>
-      
+      <div style="position:absolute;top:-50px;left:50%;transform:translateX(-50%);width:200px;height:200px;background:#25d366;filter:blur(100px);opacity:.2;pointer-events:none">
+      </div>
+
       <div class="update-header" style="justify-content:center;position:relative;background:0 0;border-bottom:1px solid rgba(255,255,255,.05);padding-top:25px">
         <div class="update-header-title" style="display:flex;flex-direction:column;align-items:center;gap:5px">
-          <h2 style="color:#fff;font-size:1.4rem;margin:0;font-family:Righteous,cursive;letter-spacing:1px">ASISTENTE VIP</h2>
+          <h2 style="color:#fff;font-size:1.4rem;margin:0;font-family:Righteous,cursive;letter-spacing:1px">
+            ASISTENTE VIP</h2>
         </div>
         <button class="btn-close-update" onclick="cerrarModalWspBot()" style="position:absolute;right:20px;top:20px;background:rgba(255,255,255,.1);border:none;border-radius:50%;width:35px;height:35px;color:var(--text-gray);transition:all .3s;backdrop-filter:blur(5px)" onmouseover="this.style.background='rgba(239, 68, 68, 0.2)',this.style.color='#ef4444'" onmouseout="this.style.background='rgba(255, 255, 255, 0.1)',this.style.color='var(--text-gray)'">
           <span class="material-icons-round">close</span>
@@ -627,20 +698,24 @@
         <div style="position:relative;width:100%;margin-bottom:5px">
           <img src="assets/mascot/bot_wsp.png?v=2" alt="WhatsApp Bot" style="width:100%;height:200px;object-fit:cover;object-position:center 20%;border-radius:18px;box-shadow:0 15px 35px rgba(0,0,0,.4);position:relative;z-index:2;border:1px solid rgba(255,255,255,.05)">
         </div>
-        
+
         <h3 style="color:#fff;margin:0;font-size:1.25rem;font-weight:800;line-height:1.3">
           Â¡Tu Bot Personal de <span style="color:#25d366">WhatsApp!</span>
         </h3>
-        
+
         <div style="text-align:left;background:rgba(0,0,0,.3);padding:15px;border-radius:12px;border:1px solid rgba(255,255,255,.1);width:100%;box-sizing:border-box">
-          <h4 style="color:#25d366;margin:0 0 10px 0;font-size:1rem"><i class="fas fa-info-circle"></i> Instrucciones de uso:</h4>
+          <h4 style="color:#25d366;margin:0 0 10px 0;font-size:1rem"><i class="fas fa-info-circle"></i>
+            Instrucciones de uso:</h4>
           <ul style="color:#d1d5db;font-size:.85rem;padding-left:20px;margin:0;line-height:1.5">
-            <li style="margin-bottom:8px">El nÃºmero que ingreses en la actualizaciÃ³n de datos <strong style="color:#fff">debe ser el mismo</strong> del que vas a escribir. De otra manera el bot no te reconocerÃ¡.</li>
-            <li style="margin-bottom:8px">El bot vincularÃ¡ tu nÃºmero con tu usuario. Todas las compras que hagas desde ahÃ­ se descontarÃ¡n del saldo de tu plataforma.</li>
-            <li>Ambos saldos y movimientos se pueden validar en tiempo real tanto desde esta pÃ¡gina como desde el bot.</li>
+            <li style="margin-bottom:8px">El número que ingreses en la actualización de datos <strong style="color:#fff">debe ser el mismo</strong> del que vas a escribir. De otra manera el bot no te
+              reconocerá.</li>
+            <li style="margin-bottom:8px">El bot vinculará tu número con tu usuario. Todas las compras que hagas desde
+              ahí se descontarán del saldo de tu plataforma.</li>
+            <li>Ambos saldos y movimientos se pueden validar en tiempo real tanto desde esta página como desde el bot.
+            </li>
           </ul>
         </div>
-        
+
         <div style="display:flex;flex-direction:column;gap:12px;width:100%;margin-top:5px">
           <button onclick="cerrarModalWspBot(),nav('datos');const c=document.getElementById('submenu-cuenta');c&&c.classList.remove('hidden')" style="background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2);padding:12px 20px;border-radius:50px;font-weight:700;font-size:1rem;cursor:pointer;transition:all .3s;width:100%;display:flex;align-items:center;justify-content:center;gap:8px" onmouseover="this.style.background='rgba(255, 255, 255, 0.15)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.1)'">
             <span class="material-icons-round" style="font-size:1.2rem">manage_accounts</span> ACTUALIZAR MIS DATOS
@@ -654,7 +729,7 @@
     </div>
 
   </div>
-  <script>document.addEventListener('DOMContentLoaded',async()=>{if('undefined'!=typeof NOMBRE_NEGOCIO){document.title=NOMBRE_NEGOCIO;const t=document.getElementById('site-logo');t&&(t.alt=`Logo ${NOMBRE_NEGOCIO}`)}const t='dw_branding_cache',e=(t,e)=>{if(t){const e=document.getElementById('site-logo');e&&(e.src=t)}if(e){const t=document.getElementById('login-banner');t&&(t.style.backgroundImage=`url('${e}')`)}};window.hasConsentidoWsp=function(){try{const t=localStorage.getItem('dw_perfil_datos_v2');if(t){const e=JSON.parse(t);if(e&&e.datos){const t=e.datos.consentimiento||e.datos.Consentimiento||'No';return'si'===t.toLowerCase()||'s\xc3\xad'===t.toLowerCase()}}}catch(t){}return!1},window.abrirModalWspBot=function(t=!1){if(t&&window.hasConsentidoWsp())return void window.open('https://wa.me/'+NUMERO_WSP+'?text=Hola,%20quiero%20informaci%C3%B3n','_blank');const e=document.getElementById('wsp-bot-overlay'),o=document.getElementById('wsp-bot-modal');e&&e.classList.remove('hidden'),o&&o.classList.add('active')},window.cerrarModalWspBot=function(){const t=document.getElementById('wsp-bot-overlay'),e=document.getElementById('wsp-bot-modal');t&&t.classList.add('hidden'),e&&e.classList.remove('active')};try{const o=localStorage.getItem(t);if(o){const t=JSON.parse(o);if((new Date).getTime()-t.timestamp<36e5)return void e(t.logo,t.banner)}const n=await fetch(`${API_BASE_URL_CLIENTE}/dw_api.php`,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'accion=getConfiguracion'}),a=await n.json();if(a.success&&a.datos){let o=a.datos.logo||'',n=a.datos.banner||'';o&&(o.includes('uc?export=view&id=')?o=o.replace('uc?export=view&id=','thumbnail?id=')+'&sz=w400':o.startsWith('http')||o.startsWith('data:')||(o=API_BASE_URL_CLIENTE+'/uploads/categorias/'+o)),n&&(n.includes('uc?export=view&id=')?n=n.replace('uc?export=view&id=','thumbnail?id=')+'&sz=w1200':n.startsWith('http')||n.startsWith('data:')||(n=API_BASE_URL_CLIENTE+'/uploads/categorias/'+n)),e(o,n),localStorage.setItem(t,JSON.stringify({logo:o,banner:n,timestamp:(new Date).getTime()}))}}catch(o){console.warn('No se pudo cargar el branding din\xc3\xa1mico, usando plan de respaldo:',o);const n=localStorage.getItem(t);if(n){const t=JSON.parse(n);e(t.logo,t.banner)}}})</script>
+  <script>document.addEventListener('DOMContentLoaded',async()=>{if('undefined'!=typeof NOMBRE_NEGOCIO){document.title=NOMBRE_NEGOCIO;const t=document.getElementById('site-logo');t&&(t.alt=`Logo ${NOMBRE_NEGOCIO}`)}const t='dw_branding_cache',e=(t,e)=>{if(t){const e=document.getElementById('site-logo');e&&(e.src=t)}if(e){const t=document.getElementById('login-banner');t&&(t.style.backgroundImage=`url('${e}')`)}};window.hasConsentidoWsp=function(){try{const t=localStorage.getItem('dw_perfil_datos_v2');if(t){const e=JSON.parse(t);if(e&&e.datos){const t=e.datos.consentimiento||e.datos.Consentimiento||'No';return'si'===t.toLowerCase()||'si'===t.toLowerCase()}}}catch(t){}return!1},window.abrirModalWspBot=function(t=!1){if(t&&window.hasConsentidoWsp())return void window.open('https://wa.me/'+NUMERO_WSP+'?text=Hola,%20quiero%20informaci\xf3n','_blank');const e=document.getElementById('wsp-bot-overlay'),o=document.getElementById('wsp-bot-modal');e&&e.classList.remove('hidden'),o&&o.classList.add('active')},window.cerrarModalWspBot=function(){const t=document.getElementById('wsp-bot-overlay'),e=document.getElementById('wsp-bot-modal');t&&t.classList.add('hidden'),e&&e.classList.remove('active')};try{const o=localStorage.getItem(t);if(o){const t=JSON.parse(o);if((new Date).getTime()-t.timestamp<36e5)return void e(t.logo,t.banner)}const n=await fetch(`${API_BASE_URL_CLIENTE}/dw_api.php`,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'accion=getConfiguracion'}),a=await n.json();if(a.success&&a.datos){let o=a.datos.logo||'',n=a.datos.banner||'';o&&(o.includes('uc?export=view&id=')?o=o.replace('uc?export=view&id=','thumbnail?id=')+'&sz=w400':o.startsWith('http')||o.startsWith('data:')||(o=API_BASE_URL_CLIENTE+'/uploads/categorias/'+o)),n&&(n.includes('uc?export=view&id=')?n=n.replace('uc?export=view&id=','thumbnail?id=')+'&sz=w1200':n.startsWith('http')||n.startsWith('data:')||(n=API_BASE_URL_CLIENTE+'/uploads/categorias/'+n)),e(o,n),localStorage.setItem(t,JSON.stringify({logo:o,banner:n,timestamp:(new Date).getTime()}))}}catch(o){console.warn('No se pudo cargar el branding dinamico, usando plan de respaldo:',o);const n=localStorage.getItem(t);if(n){const t=JSON.parse(n);e(t.logo,t.banner)}}})</script>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -667,6 +742,7 @@
   
   <script>function buildLoginCascade(){const e=document.getElementById('cascade-container');if(!e||'undefined'==typeof posterData||!posterData||0===posterData.length)return;e.innerHTML='';const t=posterData.map(e=>e.url).sort(()=>Math.random()-.5);for(let n=0;n<12;n++){const a=document.createElement('div');a.className='cascade-column';const s=[];for(let e=0;e<10;e++)s.push(t[(10*n+e)%t.length]);[...s,...s].forEach(e=>{const t=document.createElement('img');t.src=e,t.className='cascade-item',t.alt='',a.appendChild(t)}),e.appendChild(a)}let n=!1,a=.25;function s(){const e=n?0:a;if(document.getAnimations().forEach(t=>{'scrollVertical'===t.animationName&&(t.playbackRate=e)}),document.querySelectorAll('.cascade-btn').forEach(e=>{e.style.color='rgba(255,255,255,0.5)',e.style.transform='scale(1)'}),n)document.getElementById('btn-pause').style.color='#10b981',document.getElementById('btn-pause').style.transform='scale(1.15)';else{document.getElementById('btn-pause').style.color='white';const e=a.toString().replace('.',''),t=document.getElementById('btn-speed-'+e);t&&(t.style.color='#10b981',t.style.transform='scale(1.15)')}}window.setCascadeSpeed=function(e){a=e,n=!1;const t=document.getElementById('btn-pause');t&&(t.innerHTML='<span class="material-icons-round">pause</span>'),s()},window.toggleCascadePause=function(){n=!n;const e=document.getElementById('btn-pause');e&&(e.innerHTML=`<span class="material-icons-round">${n?'play_arrow':'pause'}</span>`),s()};const c=document.getElementById('btn-pause');c&&(c.onclick=toggleCascadePause,document.getElementById('btn-speed-025').onclick=()=>setCascadeSpeed(.25),document.getElementById('btn-speed-05').onclick=()=>setCascadeSpeed(.5),document.getElementById('btn-speed-1').onclick=()=>setCascadeSpeed(1),document.getElementById('btn-speed-25').onclick=()=>setCascadeSpeed(2.5),setTimeout(()=>setCascadeSpeed(.25),100))}!function e(t){'undefined'!=typeof posterData&&posterData&&posterData.length>0?buildLoginCascade():t<20&&setTimeout(function(){e(t+1)},150)}(0)</script>
 
-  <script src="app.min.js?v=1785195670460"></script>
+  <script src="app.min.js?v=1785196366142"></script>
 </body>
+
 </html>
