@@ -30,6 +30,7 @@
   <link rel="apple-touch-icon" href="assets/icon-512x512.png">
   <script>'serviceWorker'in navigator&&window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').then(e=>{console.log('SW registrado exitosamente con alcance: ',e.scope)},e=>{console.log('Registro de SW fallido: ',e)})})</script>
   <script>localStorage.getItem('dw_token')&&localStorage.getItem('dw_user')&&document.write('<style>#login-view { display: none !important; } #app-view { display: flex !important; }</style>'),function(){const e=localStorage.getItem('dw_tema_color')||'tec';let c='';'tec'===e?c=':root { --accent: #ec4899; --accent-hover: #db2777; --accent-glow: rgba(236,72,153,0.2); --accent-text: #db2777; --accent-gradient: linear-gradient(135deg,#ec4899 0%,#be185d 100%); } .dark-mode { --accent: #f472b6; --accent-hover: #ec4899; --accent-glow: rgba(244,114,182,0.35); --accent-text: #f9a8d4; --accent-gradient: linear-gradient(135deg,#f472b6 0%,#db2777 100%); }':'oceano'===e?c=':root { --accent: #0284c7; --accent-hover: #0369a1; --accent-glow: rgba(2,132,199,0.2); --accent-text: #0369a1; --accent-gradient: linear-gradient(135deg,#0284c7 0%,#0891b2 100%); } .dark-mode { --accent: #38bdf8; --accent-hover: #0284c7; --accent-glow: rgba(56,189,248,0.35); --accent-text: #7dd3fc; --accent-gradient: linear-gradient(135deg,#38bdf8 0%,#22d3ee 100%); }':'esmeralda'===e?c=':root { --accent: #059669; --accent-hover: #047857; --accent-glow: rgba(5,150,105,0.2); --accent-text: #047857; --accent-gradient: linear-gradient(135deg,#059669 0%,#0d9488 100%); } .dark-mode { --accent: #10b981; --accent-hover: #059669; --accent-glow: rgba(16,185,129,0.35); --accent-text: #34d399; --accent-gradient: linear-gradient(135deg,#10b981 0%,#14b8a6 100%); }':'fuego'===e&&(c=':root { --accent: #dc2626; --accent-hover: #b91c1c; --accent-glow: rgba(249,115,22,0.2); --accent-text: #c2410c; --accent-gradient: linear-gradient(135deg,#dc2626 0%,#ea580c 100%); } .dark-mode { --accent: #ef4444; --accent-hover: #dc2626; --accent-glow: rgba(249,115,22,0.35); --accent-text: #fb923c; --accent-gradient: linear-gradient(135deg,#ef4444 0%,#f97316 100%); }'),c&&document.write('<style>'+c+'</style>')}()</script>
+  <style>@keyframes pulseAura{0%{filter:drop-shadow(0 0 15px rgba(236,72,153,.7)) drop-shadow(0 0 30px rgba(236,72,153,.3))}100%{filter:drop-shadow(0 0 25px rgba(236,72,153,1)) drop-shadow(0 0 50px rgba(236,72,153,.6))}}</style>
 </head>
 
 <body>
@@ -45,10 +46,10 @@
         <div class="login-scanline"></div>
         
         <div class="login-box" id="login-box-main">
-          <h1 class="vault-header" style="font-size:1.85rem;text-align:center;white-space:normal;overflow:visible">DIGITAL
-            ENTERTAINMENT</h1>
-          <p class="subtitle" style="text-align:center;color:var(--text-gray);margin-bottom:30px">Plataforma de
-            Acceso</p>
+          <div style="text-align:center;margin-bottom:5px">
+            <img src="assets/img/logo.png" alt="Digital Entertainment Logo" style="max-width:240px;height:auto;filter:drop-shadow(0 0 18px rgba(236,72,153,.9)) drop-shadow(0 0 35px rgba(236,72,153,.4));animation:pulseAura 3s infinite alternate">
+          </div>
+          <p class="subtitle" style="text-align:center;color:var(--text-gray);margin-bottom:30px;font-family:inherit;font-size:1.15rem;font-weight:500;letter-spacing:1.5px">Plataforma de Acceso</p>
 
           <form id="login-form">
             <div class="glitch-input-wrapper">
@@ -234,7 +235,7 @@
         </div>
 
         
-        <button class="theme-toggle" title="Cambiar Tema" onclick="toggleThemeLoginCliente()" style="position:absolute;top:20px;right:20px;background:0 0;border:none;color:var(--text-gray);cursor:pointer">
+        <button class="theme-toggle" title="Cambiar Tema" onclick="toggleThemeLoginCliente()" style="position:absolute;top:20px;right:20px;background:0 0;border:none;color:var(--text-gray);cursor:pointer;z-index:9999">
           <i class="material-icons-round" id="theme-icon-login">light_mode</i>
         </button>
 
@@ -274,7 +275,7 @@
       <script>window.innerWidth<=768&&document.getElementById('sidebar').classList.add('collapsed')</script>
       
       <div id="sidebar-image-container" style="padding:0 10px;margin-bottom:-15px;margin-top:10px;text-align:center">
-        <img src="assets/mascot/digital_entertainment_logo.png" alt="Digital Entertainment Logo" style="max-width:55%;height:auto;filter:drop-shadow(0 0 18px var(--accent)) drop-shadow(0 0 35px var(--accent-glow));transition:all .4s ease" onmouseover="this.style.transform='scale(1.08)',this.style.filter='drop-shadow(0 0 25px var(--accent)) drop-shadow(0 0 50px var(--accent-glow))'" onmouseout="this.style.transform='scale(1)',this.style.filter='drop-shadow(0 0 18px var(--accent)) drop-shadow(0 0 35px var(--accent-glow))'">
+        <img src="assets/img/logo.png" alt="Digital Entertainment Logo" style="max-width:55%;height:auto;filter:drop-shadow(0 0 18px var(--accent)) drop-shadow(0 0 35px var(--accent-glow));transition:all .4s ease" onmouseover="this.style.transform='scale(1.08)',this.style.filter='drop-shadow(0 0 25px var(--accent)) drop-shadow(0 0 50px var(--accent-glow))'" onmouseout="this.style.transform='scale(1)',this.style.filter='drop-shadow(0 0 18px var(--accent)) drop-shadow(0 0 35px var(--accent-glow))'">
       </div>
 
       <ul class="nav-links">
@@ -734,7 +735,7 @@
   
   <script>function buildLoginCascade(){const e=document.getElementById('cascade-container');if(!e||'undefined'==typeof posterData||!posterData||0===posterData.length)return;e.innerHTML='';const t=posterData.map(e=>e.url).sort(()=>Math.random()-.5);for(let n=0;n<12;n++){const a=document.createElement('div');a.className='cascade-column';const s=[];for(let e=0;e<10;e++)s.push(t[(10*n+e)%t.length]);[...s,...s].forEach(e=>{const t=document.createElement('img');t.src=e,t.className='cascade-item',t.alt='',a.appendChild(t)}),e.appendChild(a)}let n=!1,a=.25;function s(){const e=n?0:a;if(document.getAnimations().forEach(t=>{'scrollVertical'===t.animationName&&(t.playbackRate=e)}),document.querySelectorAll('.cascade-btn').forEach(e=>{e.style.color='rgba(255,255,255,0.5)',e.style.transform='scale(1)'}),n)document.getElementById('btn-pause').style.color='#10b981',document.getElementById('btn-pause').style.transform='scale(1.15)';else{document.getElementById('btn-pause').style.color='white';const e=a.toString().replace('.',''),t=document.getElementById('btn-speed-'+e);t&&(t.style.color='#10b981',t.style.transform='scale(1.15)')}}window.setCascadeSpeed=function(e){a=e,n=!1;const t=document.getElementById('btn-pause');t&&(t.innerHTML='<span class="material-icons-round">pause</span>'),s()},window.toggleCascadePause=function(){n=!n;const e=document.getElementById('btn-pause');e&&(e.innerHTML=`<span class="material-icons-round">${n?'play_arrow':'pause'}</span>`),s()};const c=document.getElementById('btn-pause');c&&(c.onclick=toggleCascadePause,document.getElementById('btn-speed-025').onclick=()=>setCascadeSpeed(.25),document.getElementById('btn-speed-05').onclick=()=>setCascadeSpeed(.5),document.getElementById('btn-speed-1').onclick=()=>setCascadeSpeed(1),document.getElementById('btn-speed-25').onclick=()=>setCascadeSpeed(2.5),setTimeout(()=>setCascadeSpeed(.25),100))}!function e(t){'undefined'!=typeof posterData&&posterData&&posterData.length>0?buildLoginCascade():t<20&&setTimeout(function(){e(t+1)},150)}(0)</script>
 
-  <script src="app.min.js?v=1785204567379"></script>
+  <script src="app.min.js?v=1785293121733"></script>
 </body>
 
 </html>
