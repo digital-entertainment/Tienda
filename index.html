@@ -547,11 +547,17 @@
         <div class="page-header-premium" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:15px;margin-bottom:20px">
           <div>
             <h1 class="page-title" style="margin:0;font-family:Righteous,cursive;letter-spacing:1px;display:flex;align-items:center;gap:10px">
-              <span class="material-icons-round" style="color:var(--accent);font-size:2.2rem">alarm</span> CUENTAS PRONTAS A VENCER
+              <span class="material-icons-round" style="color:var(--accent);font-size:2.2rem">vpn_key</span> MIS CUENTAS ACTIVAS
             </h1>
-            <p class="page-subtitle" style="color:var(--text-gray);margin-top:5px;font-size:.95rem">Servicios con vigencia próxima a vencer (de 0 a 7 días). Para ver tu historial completo de compras, visita <a href="#" onclick="return nav('pedidos'),!1" style="color:var(--accent);font-weight:700;text-decoration:none">Mis Pedidos</a>.</p>
+            <p class="page-subtitle" style="color:var(--text-gray);margin-top:5px;font-size:.95rem">Gestión centralizada de tus credenciales y servicios activos. Para ver tu historial histórico de compras, visita <a href="#" onclick="return nav('pedidos'),!1" style="color:var(--accent);font-weight:700;text-decoration:none">Mis Pedidos</a>.</p>
           </div>
-          <span id="cuentas-total-badge" style="background:var(--bg-card);color:var(--accent);border:1px solid var(--border-color);font-weight:800;font-size:.85rem;padding:6px 14px;border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.1)">0 cuentas por vencer</span>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+            <button type="button" id="btn-sync-cuentas" onclick="sincronizarCuentasManual(!1)" title="Sincronizar cuentas recientes (últimos 2 días)" style="background:var(--bg-card);color:var(--text-main);border:1px solid var(--border-color);font-weight:700;font-size:.82rem;padding:8px 14px;border-radius:10px;display:inline-flex;align-items:center;gap:6px;cursor:pointer;transition:all .2s;box-shadow:var(--shadow-sm)">
+              <i class="material-icons-round" id="icon-sync-cuentas" style="font-size:1.15rem;color:var(--accent);transition:transform .5s ease">sync</i>
+              <span id="text-sync-cuentas">Sincronizar</span>
+            </button>
+            <span id="cuentas-total-badge" style="background:var(--bg-card);color:var(--accent);border:1px solid var(--border-color);font-weight:800;font-size:.85rem;padding:8px 16px;border-radius:20px;box-shadow:0 2px 10px rgba(0,0,0,.1)">0 cuentas activas</span>
+          </div>
         </div>
 
         <div id="cuentas-filtros-wrapper"></div>
@@ -764,7 +770,7 @@
   
   <script>function buildLoginCascade(){const e=document.getElementById('cascade-container');if(!e||'undefined'==typeof posterData||!posterData||0===posterData.length)return;e.innerHTML='';const t=posterData.map(e=>e.url).sort(()=>Math.random()-.5);for(let n=0;n<12;n++){const a=document.createElement('div');a.className='cascade-column';const s=[];for(let e=0;e<10;e++)s.push(t[(10*n+e)%t.length]);[...s,...s].forEach(e=>{const t=document.createElement('img');t.src=e,t.className='cascade-item',t.alt='',a.appendChild(t)}),e.appendChild(a)}let n=!1,a=.25;function s(){const e=n?0:a;if(document.getAnimations().forEach(t=>{'scrollVertical'===t.animationName&&(t.playbackRate=e)}),document.querySelectorAll('.cascade-btn').forEach(e=>{e.style.color='rgba(255,255,255,0.5)',e.style.transform='scale(1)'}),n)document.getElementById('btn-pause').style.color='#10b981',document.getElementById('btn-pause').style.transform='scale(1.15)';else{document.getElementById('btn-pause').style.color='white';const e=a.toString().replace('.',''),t=document.getElementById('btn-speed-'+e);t&&(t.style.color='#10b981',t.style.transform='scale(1.15)')}}window.setCascadeSpeed=function(e){a=e,n=!1;const t=document.getElementById('btn-pause');t&&(t.innerHTML='<span class="material-icons-round">pause</span>'),s()},window.toggleCascadePause=function(){n=!n;const e=document.getElementById('btn-pause');e&&(e.innerHTML=`<span class="material-icons-round">${n?'play_arrow':'pause'}</span>`),s()};const c=document.getElementById('btn-pause');c&&(c.onclick=toggleCascadePause,document.getElementById('btn-speed-025').onclick=()=>setCascadeSpeed(.25),document.getElementById('btn-speed-05').onclick=()=>setCascadeSpeed(.5),document.getElementById('btn-speed-1').onclick=()=>setCascadeSpeed(1),document.getElementById('btn-speed-25').onclick=()=>setCascadeSpeed(2.5),setTimeout(()=>setCascadeSpeed(.25),100))}!function e(t){'undefined'!=typeof posterData&&posterData&&posterData.length>0?buildLoginCascade():t<20&&setTimeout(function(){e(t+1)},150)}(0)</script>
 
-  <script src="app.min.js?v=1790305900760"></script>
+  <script src="app.min.js?v=1790436754797"></script>
 </body>
 
 </html>
